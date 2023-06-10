@@ -16,7 +16,7 @@ def NormalPassword(totalChar):
             password += chr(uppercase)
         elif randomSelector == 3:
             password += chr(numbers)
-    print(password)
+    print("Your new password is : ", password)
 
 #If the user wants a password with some special characters  
 def SpecialPassword(totalChar):
@@ -37,7 +37,7 @@ def SpecialPassword(totalChar):
             password += chr(numbers)
         elif randomSelector ==4:
             password += specialCharacter[randomSpecial]
-    print(password)
+    print("Your new password is : ",password)
 
 totalChar= int(input("How long do you want your password to be ? : "))
 prompt = input("Do you want a password with special character or normal one without special character, Enter n for normal , s for special character : ")
